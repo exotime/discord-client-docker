@@ -1,6 +1,6 @@
 # Discord Client in a Docker container
 
-A container built on Debian Jessie, this contains all of the dependencies needed
+A container built on Debian Stretch, this contains all of the dependencies needed
 to run the official Discord client.
 
 Nice for when you don't want your host to have all the dependencies installed,
@@ -12,6 +12,8 @@ To run the container from the prebuilt image on [Docker Hub](https://hub.docker.
 
     $ docker run -it \
             -v /tmp/.X11-unix:/tmp/.X11-unix \
+            -v /etc/localtime:/etc/localtime:ro \
+            -v ${HOME}/.config/discord/:/root/.config/discord/ \
             -e DISPLAY=$DISPLAY \
             --device /dev/snd \
             exotime/discord-client-docker

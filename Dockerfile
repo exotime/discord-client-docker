@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:stretch
 LABEL maintainer="exotime <exotime@users.noreply.github.com>"
 LABEL version="0.1"
 
@@ -10,6 +10,8 @@ ENV URL https://discordapp.com/api/download?platform=linux&format=deb
 #
 # $ docker run -it \
 #       -v /tmp/.X11-unix:/tmp/.X11-unix \
+#       -v /etc/localtime:/etc/localtime:ro \
+#       -v ${HOME}/.config/discord/:/root/.config/discord/ \
 #       -e DISPLAY=$DISPLAY \
 #       --device /dev/snd \
 #       exotime/vmware-horizon-client
