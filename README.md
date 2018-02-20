@@ -1,7 +1,6 @@
 # Discord Client in a Docker container
 
-[![](https://images.microbadger.com/badges/image/exotime/discord-client-docker.svg)](https://microbadger.com/i$
-
+[![](https://images.microbadger.com/badges/image/exotime/discord-client-docker.svg)](https://microbadger.com/images/exotime/discord-client-docker)
 
 A container built on Debian Stretch, this contains all of the dependencies needed
 to run the official Discord client.
