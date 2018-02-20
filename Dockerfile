@@ -14,7 +14,7 @@ ENV URL https://discordapp.com/api/download?platform=linux&format=deb
 #       -v ${HOME}/.config/discord/:/root/.config/discord/ \
 #       -e DISPLAY=$DISPLAY \
 #       --device /dev/snd \
-#       exotime/vmware-horizon-client
+#       exotime/discord-client-docker
 
 RUN apt update && \
     apt install --yes --no-install-recommends \
