@@ -1,6 +1,6 @@
 FROM debian:stretch
 LABEL maintainer="exotime <exotime@users.noreply.github.com>"
-LABEL version="0.1"
+LABEL version="0.1.1"
 
 # The URL to fetch. Now redirects to the latest version.
 ENV URL https://discordapp.com/api/download?platform=linux&format=deb
